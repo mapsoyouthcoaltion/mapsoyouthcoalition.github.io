@@ -60,6 +60,9 @@
       overflow-x: hidden;
       background-color: #262626;
       overflow-y: scroll;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
     }
 
 
@@ -93,7 +96,7 @@
     .buttons {
       color: white;
       font-family: Source;
-      font-size: 2.2vw;
+      font-size: 1.8vw;
       margin: 10px;
     }
     .buttons:hover {
@@ -335,6 +338,19 @@
       height: auto;
     }
 
+    .resource_images {
+      width: 40vw;
+      height: auto;
+    }
+
+    #resources_container {
+      height: 86vh;
+      width: 60vw;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: column;
+    }
 
 
 
@@ -502,7 +518,10 @@
       <div id="bottom_anchor"></div>
     </div>
 
-
+    <div id="resources_container" class="containers">
+      <img src="https://i.imgur.com/2l9ryUT.png" class="resource_images">
+      <img src="https://i.imgur.com/1IoZlf4.png" class="resource_images">
+    </div>
 
 
 
@@ -525,6 +544,7 @@
       <a href="#container"><div class="buttons" data-switch="committees_container">COMMITTEES</div></a>
       <a href="#container"><div class="buttons" data-switch="contact_container">CONTACT</div></a>
       <a href="#container"><div class="buttons" data-switch="donate_container">DONATE</div></a>
+      <a href="#container"><div class="buttons" data-switch="resources_container">RESOURCES</div></a>
     </div>
   </div>
 </div>
